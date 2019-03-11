@@ -7,10 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" media="screen" href={{ url_for('static', filename='bootstrap.min.css') }}>
-
     <title>LaSalle Dance Center</title>
 </head>
-<body>
+<body style="background-color: mediumpurple">
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
         <a class="navbar-brand" href="#">The Dance Center</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,21 +47,37 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron bg-light">
-        <h1 class="display-4">The Dance Center</h1>
-        <p class="lead">127 Joliet Street La Salle, IL 61301</p>
-        <hr class="my-4">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <p>We welcome you to a lifetime filled with dance and music. For over 40 years the Dance Center has provided professional dance instruction for students ages 3 and up. The Instructors are Dance Educators of America Dance Master certified. From the recreational dancer to competitive dance, the Dance Center provides a fun and educational program. All classes operate on a low student to teacher ratio, ensuring your child a more personal dance experience. Classes run September through May, with dance camps and private lessons offered in the summer.</p>
-                <p>Our professionally produced Spring Recitals are every other year. We also perform a Holiday Show on opposite years to our recital. The Dance Center is involved in the Illinois Valley Symphony's production of the "Nutcracker" ballet, along with other community opportunities.</p>
-                <p>The Dance Center instructors and staff would love the opportunity to teach your child the poise, charm, and grace that they will gain along with the love and technique of dance. Please feel free to contact us for more information.</p>
+    <div class="container bg-dark">
+        <div class="container m-3">
+            <div class="row p-2">
+                <div class="col-sm-6">
+                    <div class="card-deck w-100">
+                        <div class="card border-0 bg-secondary text-white">
+                            <div class="card-header">Classes</div>
+                            <img class="card-img" src="{{url_for('static', filename='class_card_image_resize.jpg')}}" alt=""/>
+                            <div class="card-footer">View all Classes</div>
+                        </div>
+                        <div class="card border-0 bg-secondary text-white">
+                            <div class="card-header">Registration</div>
+                            <img class="card-img-top" src="{{url_for('static', filename='registration_card_image_resize.jpg')}}" alt=""/>
+                            <div class="card-footer">Register for Classes</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col pl-5">
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdancecenterlasalleil%2F&tabs=timeline%2Cevents%2Cmessages&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
-                </iframe>
+            <div class="row">
+                <div class="col-sm-6 text-white">
+                    <p>We welcome you to a lifetime filled with dance and music. For over 40 years the Dance Center has provided professional dance instruction for students ages 3 and up. The Instructors are Dance Educators of America Dance Master certified. From the recreational dancer to competitive dance, the Dance Center provides a fun and educational program. All classes operate on a low student to teacher ratio, ensuring your child a more personal dance experience. Classes run September through May, with dance camps and private lessons offered in the summer.</p>
+                    <p>Our professionally produced Spring Recitals are every other year. We also perform a Holiday Show on opposite years to our recital. The Dance Center is involved in the Illinois Valley Symphony's production of the "Nutcracker" ballet, along with other community opportunities.</p>
+                    <p>The Dance Center instructors and staff would love the opportunity to teach your child the poise, charm, and grace that they will gain along with the love and technique of dance. Please feel free to contact us for more information.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col">
+                        <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdancecenterlasalleil%2F&tabs=timeline%2Cevents%2Cmessages&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
